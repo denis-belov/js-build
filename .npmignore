@@ -1,0 +1,14 @@
+/node_modules
+/src
+/util
+/.babelrc
+/.eslintrc.js
+/.gitattributes
+/.gitignore
+/.npmignore
+/publish.js
+/package.json
+/package-lock.json
+/README.MD
+/webpack.config.js
+/spec
