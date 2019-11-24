@@ -11,7 +11,7 @@ no-process-env
 
 const projectProperties = {
   'external-data-loader': 'E:/reps/denis-belov/external-data-loader',
-  'xgk-js-webpack-cpp-loader': 'E:/reps/xgk/xgk-js-webpack-cpp-loader',
+  'compile-webpack-loader': 'E:/reps/denis-belov/compile-webpack-loader',
 };
 
 const fs = require('fs');

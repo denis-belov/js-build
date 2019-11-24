@@ -21,7 +21,7 @@
     "string-replace-loader": "2.1.1",
     "wasm-loader": "1.3.0",
     "arraybuffer-loader": "1.0.7",
-    "@xgk/js-webpack-cpp-loader": "0.0.10",
+    "@denis-belov/compile-webpack-loader": "0.0.13",
     "uglifyjs-webpack-plugin": "2.1.3",
     "optimize-css-assets-webpack-plugin": "5.0.1",
     "extended-define-webpack-plugin": "0.1.3",
@@ -94,8 +94,8 @@
     "js-web-test:serve": "cross-env PROJECT=js-web-test webpack-dev-server --mode=development --open",
     "external-data-loader:build": "cross-env PROJECT=external-data-loader webpack --mode=production",
     "external-data-loader:publish": "cross-env PROJECT=external-data-loader node publish",
-    "webpack-cpp-loader:build": "cross-env PROJECT=xgk-js-webpack-cpp-loader webpack --mode=production",
-    "webpack-cpp-loader:publish": "cross-env PROJECT=xgk-js-webpack-cpp-loader node publish"
+    "compile-webpack-loader:build": "cross-env PROJECT=compile-webpack-loader webpack --mode=production",
+    "compile-webpack-loader:publish": "cross-env PROJECT=compile-webpack-loader node publish"
   },
   "sideEffects": false
 }

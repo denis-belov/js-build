@@ -2,11 +2,13 @@
 eslint-disable
 linebreak-style,
 id-length,
+id-match,
 no-process-env,
 max-len,
 no-sync,
 no-magic-numbers,
-global-require
+global-require,
+camelcase,
 */
 
 const { join } = require('path');
@@ -31,21 +33,21 @@ const plugins = {
   BannerPlugin: webpack.BannerPlugin,
 };
 
-const commonDefs = {
+const common_defs = {
   DEPS: `${ join(__dirname, 'node_modules') }/`,
 };
 
-const eslintConfig = join(__dirname, '.eslintrc.js');
+const eslint_config = join(__dirname, '.eslintrc.js');
 
-const projectParams = {
+const project_params = {
   'external-data-loader': {
     entry: '../external-data-loader/index.js',
     dirname: join(__dirname, '../external-data-loader'),
   },
 
-  'xgk-js-webpack-cpp-loader': {
-    entry: '../xgk-js-webpack-cpp-loader/index.js',
-    dirname: join(__dirname, '../xgk-js-webpack-cpp-loader'),
+  'compile-webpack-loader': {
+    entry: '../compile-webpack-loader/index.js',
+    dirname: join(__dirname, '../compile-webpack-loader'),
   },
 
   'js-web-test': {
@@ -55,10 +57,10 @@ const projectParams = {
 };
 
 module.exports = require(`../${ process.env.PROJECT }/webpack.config`)(
-  projectParams[process.env.PROJECT],
+  project_params[process.env.PROJECT],
   plugins,
-  commonDefs,
-  eslintConfig,
+  common_defs,
+  eslint_config,
   process.env,
   host,
 );
