@@ -11,7 +11,6 @@ no-process-env
 
 const projectProperties = {
   'external-data-loader': 'E:/reps/denis-belov/external-data-loader',
-  'compile-webpack-loader': 'E:/reps/denis-belov/compile-webpack-loader',
 };
 
 const fs = require('fs');

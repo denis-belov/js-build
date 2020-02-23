@@ -31,6 +31,7 @@ const plugins = {
   UglifyJsPlugin: require('uglifyjs-webpack-plugin'),
   ExtendedDefineWebpackPlugin: require('extended-define-webpack-plugin'),
   BannerPlugin: webpack.BannerPlugin,
+  IgnorePlugin: webpack.IgnorePlugin,
 };
 
 const common_defs = {
@@ -43,11 +44,6 @@ const project_params = {
   'external-data-loader': {
     entry: '../external-data-loader/index.js',
     dirname: join(__dirname, '../external-data-loader'),
-  },
-
-  'compile-webpack-loader': {
-    entry: '../compile-webpack-loader/index.js',
-    dirname: join(__dirname, '../compile-webpack-loader'),
   },
 
   'js-web-test': {

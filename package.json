@@ -93,9 +93,7 @@
   "scripts": {
     "js-web-test:serve": "cross-env PROJECT=js-web-test webpack-dev-server --mode=development --open",
     "external-data-loader:build": "cross-env PROJECT=external-data-loader webpack --mode=production",
-    "external-data-loader:publish": "cross-env PROJECT=external-data-loader node publish",
-    "compile-webpack-loader:build": "cross-env PROJECT=compile-webpack-loader webpack --mode=production",
-    "compile-webpack-loader:publish": "cross-env PROJECT=compile-webpack-loader node publish"
+    "external-data-loader:publish": "cross-env PROJECT=external-data-loader node publish"
   },
   "sideEffects": false
 }
